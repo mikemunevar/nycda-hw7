@@ -1,0 +1,58 @@
+Problem 1
+Create a new Rails app.
+Remember to commit the code for your new Rails app immediately after creating it! Any changes you make to the newly initialized app should be committed after the initial commit so I can easily see just the code you wrote.
+[ COMPLETE ]
+
+Add Devise to your app.
+[ COMPLETE ]
+
+Create a user model to your app and use Devise to enable users to sign up, log in, and reset their passwords.
+[ COMPLETE ]
+
+Change your user model to allow it to store an admin flag, name, headline, and profile.
+[ INCOMPLETE ]
+
+
+Create a show page that displays the name, headline, profile, and email of a particular user.
+[ INCOMPLETE ]
+
+
+Create an edit page that allows changing the name, headline, profile, and email of a particular user.
+[ INCOMPLETE ]
+
+
+If the user is not successfully updated after submitting the edit form, redisplay the form and show the errors that prevented the changes to the user from being saved.
+[ INCOMPLETE ]
+
+
+If the user is successfully updated after submitting the edit form, redirect to the show page for the user and display a message indicating that the user was updated.
+[ INCOMPLETE ]
+
+
+Add an edit link to the show page that goes to the edit page for that user, but only display the link if currently signed in and the currently signed-in user is either an admin or the user being shown.
+[ INCOMPLETE ]
+
+
+Disallow editing a user if not currently signed in, or the currently signed-in user is not either an admin or the user being edited. (Note that this is not the same thing as not showing a link to the edit page!)
+[ INCOMPLETE ]
+
+
+Allow changing the admin flag of a user from the edit page, but only if currently signed in and the currently signed-in user is an admin.
+[ INCOMPLETE ]
+
+
+Add a list page that displays a list of the names and headlines of every user, with the user’s name linked to the show page for that user.
+[ INCOMPLETE ]
+
+
+Add a navigation bar that appears at the top of every page in your app and that contains a link to the list page.
+[ INCOMPLETE ]
+
+
+Add links to log in and sign up to the navigation bar if not currently signed in.
+[ INCOMPLETE ]
+
+
+Add a link to the show page for the currently signed-in user to the navigation bar if currently signed in.
+[ INCOMPLETE ]
+
