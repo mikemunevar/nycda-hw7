@@ -1,0 +1,25 @@
+<%= form_for(@user) do |f| %>
+
+    <p>
+        <%= f.label(:name, 'Name: ') %>
+        <%= f.text_field(:name, placeholder: "This is the name" ) %>
+    </p>
+    
+    <p>
+        <%= f.label(:email, 'Email: ') %>
+        <%= f.text_area(:email, placeholder: "This is the email" ) %>
+    </p>
+    
+    <p>
+        <%= f.label(:headline, 'Headline: ') %>
+        <%= f.text_area(:headline, placeholder: "This is the headline" ) %>
+    </p>
+    
+    <p>
+        <%= f.label(:profile, 'Profile: ') %>
+        <%= f.text_area(:profile, placeholder: "This is the profile" ) %>
+    </p>
+
+    <p><%= f.submit %></p>
+
+<% end %>

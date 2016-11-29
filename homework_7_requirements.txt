@@ -10,15 +10,15 @@ Create a user model to your app and use Devise to enable users to sign up, log i
 [ COMPLETE ]
 
 Change your user model to allow it to store an admin flag, name, headline, and profile.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Create a show page that displays the name, headline, profile, and email of a particular user.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Create an edit page that allows changing the name, headline, profile, and email of a particular user.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 If the user is not successfully updated after submitting the edit form, redisplay the form and show the errors that prevented the changes to the user from being saved.
@@ -26,7 +26,7 @@ If the user is not successfully updated after submitting the edit form, redispla
 
 
 If the user is successfully updated after submitting the edit form, redirect to the show page for the user and display a message indicating that the user was updated.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Add an edit link to the show page that goes to the edit page for that user, but only display the link if currently signed in and the currently signed-in user is either an admin or the user being shown.
