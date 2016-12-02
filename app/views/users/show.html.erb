@@ -1,5 +1,5 @@
-show.html.erb
-<h1>Show User</h1>
+
+<h1>Show User(show.html.erb)</h1>
 
     
     <p>Name:           <%= @user.name %> </p>
@@ -9,10 +9,14 @@ show.html.erb
     <p>Admin:          <%= @user.admin %></p>
 
 
-<p>EDIT USER</p>
-<p><%= link_to("Edit This User", edit_user_path ) %></p>
 
-<p>DELETE USER</p>
+    <% if(@user == current_user) %>
+        <h2>Edit User</h2>
+        <p><%= link_to("Edit This User", edit_user_path ) %> </p>
+    <% end %>
+
+
+<h2>Delete User</h2>
 <p><%#= link_to("Delete This User", user_path, method: :delete, data: {confirm: "Are you sure that you want to delete this user?" ) %></p>
 
 

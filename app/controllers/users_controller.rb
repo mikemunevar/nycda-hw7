@@ -29,7 +29,14 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     # redirect_to(@user)
-    redirect_to_user("You just created a new user.")
+    # redirect_to_user("You just created a new user.")
+    
+    #check if the user is valid by the definintion in validation in the user model
+    if @user.valid?
+			redirect_to(@user, notice: 'Wow, you created a user!')
+		else
+			render(:new)
+		end
   end
 
 

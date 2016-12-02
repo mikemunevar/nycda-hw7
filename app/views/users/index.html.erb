@@ -1,9 +1,17 @@
 <h1>Users#index</h1>
 <p>Find me in app/views/users/index.html.erb</p>
 
-<p>Number of users: <%= number_with_delimiter(@users.count) %></p>
 <% @users.each do |user| %>
-    <li><%= link_to(user.name, user)  %></li>
-
-
+    <ul>
+        <%= link_to(user.name, user)  %> |
+        <%= user.headline  %>
+        
+        <% if(user == current_user) %>
+            | <%= edit_user_link(user) %>
+        <% end %>
+        </ul>
 <% end %>
+
+
+<p>Number of users: <%= number_with_delimiter(@users.count) %></p>
+

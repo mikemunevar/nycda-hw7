@@ -7,9 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+      <nav>
+        <%= link_to('All Users',  users_path ) %> |
+  
+        <% if signed_in? %>
+          Welcome 
+          <%= show_user_link(current_user, current_user.name) %>
+           (<%= current_user.email %>) |
+          <%= link_to( "SIGN OUT", destroy_user_session_path, method: :delete) %>     
+  
+        <% else %>
+          <%= link_to( "SIGN IN", new_user_session_path) %> |     
+          <%= link_to( "SIGN UP", new_user_registration_path )%>
+        <% end %>
+        </nav>
+      
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-<%= yield %>
+       
+       <%= yield %>
 
+  <!--This is coming from the controller, the notice keyword-->
+  <div class = "notice"><%= flash.notice %></div>  
+  
 </body>
 </html>
