@@ -6,15 +6,15 @@ rails generate scaffold hotel name:string description:text location:string photo
 
 
 Create pages to add and edit hotels if currently signed in.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Require hotels to have a user, name, and location.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Require the hotel name to be unique.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 If the currently signed-in user is an admin, display a dropdown of users on the hotel form. Otherwise, associate the hotel with the currently signed-in user.
