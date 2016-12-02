@@ -29,7 +29,11 @@
   </div>
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%#= f.number_field :user_id %>
+    <!--This handy little snippet of code allows me to create a dropdown of current users!  Cool! #MDM-->
+    <!--http://stackoverflow.com/questions/14113057/how-to-have-a-drop-down-select-field-in-a-rails-form-->
+    <%=  f.collection_select :user_id, User.order(:name),:id,:name, include_blank: true %>
+
   </div>
   <div class="actions">
     <%= f.submit %>
