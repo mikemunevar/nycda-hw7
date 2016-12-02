@@ -18,7 +18,7 @@ Require the hotel name to be unique.
 
 
 If the currently signed-in user is an admin, display a dropdown of users on the hotel form. Otherwise, associate the hotel with the currently signed-in user.
-[ INCOMPLETE ]
+[ Partially COMPLETE ]
 
 
 Create a hotel show page that displays the name, description, location, photo, and the user that the hotel belongs to.

@@ -18,6 +18,8 @@
 <p>
   <strong>Photo:</strong>
   <%= @hotel.photo_id %>
+  <%= image_tag(@hotel.photo.url(:medium)) %>
+  <%= @hotel.photo.url(:medium) %>
 </p>
 
 <p>

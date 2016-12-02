@@ -20,7 +20,7 @@
         <td><%= hotel.name %></td>
         <td><%= hotel.description %></td>
         <td><%= hotel.location %></td>
-        <td><%= hotel.photo_id %></td>
+        <td><%= image_tag(hotel.photo.url(:thumb)) %> <%= hotel.photo_id %> </td>
         <td><%= hotel.user_id %></td>
         <td><%= link_to 'Show', hotel %></td>
         <td><%= link_to 'Edit', edit_hotel_path(hotel) %></td>
