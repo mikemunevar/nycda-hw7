@@ -1,0 +1,50 @@
+For this problem you can simply commit additional changes to the Rails app you created for Problem 1 on Homework 7.
+
+Create a hotel model that stores a name, description, location, photo, and the user that the hotel belongs to.
+rails generate scaffold hotel name:string description:text location:string photo_id:integer user_id:integer
+[ COMPLETE ]
+
+
+Create pages to add and edit hotels if currently signed in.
+[ INCOMPLETE ]
+
+
+Require hotels to have a user, name, and location.
+[ INCOMPLETE ]
+
+
+Require the hotel name to be unique.
+[ INCOMPLETE ]
+
+
+If the currently signed-in user is an admin, display a dropdown of users on the hotel form. Otherwise, associate the hotel with the currently signed-in user.
+[ INCOMPLETE ]
+
+
+Create a hotel show page that displays the name, description, location, photo, and the user that the hotel belongs to.
+[ INCOMPLETE ]
+
+
+Link the user on the hotel show page to the show page for the user.
+[ INCOMPLETE ]
+
+
+Add edit and delete links to the hotel show page, but only display the links if currently signed in and the currently-signed user is either an admin or the hotel belongs to them.
+[ INCOMPLETE ]
+
+
+List the hotels that belong to a user on the user’s show page, with each hotel linked to its show page.
+[ INCOMPLETE ]
+
+
+Add the Geocoder (Links to an external site.) gem to your app.
+[ INCOMPLETE ]
+
+
+Geocode the location when creating a hotel.
+[ INCOMPLETE ]
+
+
+Add a search field to the navigation bar that allows submitting a location and upon submission brings you to a page that lists all hotels within 10 miles of the entered location, sorted by distance.
+[ INCOMPLETE ]
+
