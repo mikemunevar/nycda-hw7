@@ -1,6 +1,7 @@
 class HotelsController < ApplicationController
   before_action :set_hotel, only: [:show, :edit, :update, :destroy]
 
+
   # GET /hotels
   # GET /hotels.json
   def index
@@ -72,3 +73,5 @@ class HotelsController < ApplicationController
       params.require(:hotel).permit(:name, :description, :location, :photo_id, :user_id, :photo)
     end
 end
+
+

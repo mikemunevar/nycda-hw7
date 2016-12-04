@@ -22,7 +22,7 @@ If the currently signed-in user is an admin, display a dropdown of users on the 
 
 
 Create a hotel show page that displays the name, description, location, photo, and the user that the hotel belongs to.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Link the user on the hotel show page to the show page for the user.

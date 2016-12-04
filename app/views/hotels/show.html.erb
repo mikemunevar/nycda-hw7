@@ -25,6 +25,14 @@
 <p>
   <strong>User:</strong>
   <%= @hotel.user_id %>
+  <%= User.order(:name) %>
+  <%#= show_user_link(@hotel.user_id, current_user.name) %>
+  <%#= show_user_link(@hotel.user_id, @hotel_user_id) %>
+  <!-- In order to use the @hotel.user.name shortcut, you have to define your has_many() and belongs_to() relationships in the models #MDM -->
+  <%= show_user_link(@hotel.user_id, @hotel.user.name ) %>
+  <%#= @user.name %>
+  <%#= @hotel.user.name %>
+
 </p>
 
 <%= link_to 'Edit', edit_hotel_path(@hotel) %> |

@@ -21,7 +21,9 @@
         <td><%= hotel.description %></td>
         <td><%= hotel.location %></td>
         <td><%= image_tag(hotel.photo.url(:thumb)) %> <%= hotel.photo_id %> </td>
-        <td><%= hotel.user_id %></td>
+        <!-- In order to use the @hotel.user.name shortcut, you have to define your has_many() and belongs_to() relationships in the models #MDM -->
+        <td><%= hotel.user_id %>. <%= show_user_link(hotel.user_id, hotel.user.name ) %>
+</td>
         <td><%= link_to 'Show', hotel %></td>
         <td><%= link_to 'Edit', edit_hotel_path(hotel) %></td>
         <td><%= link_to 'Destroy', hotel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
