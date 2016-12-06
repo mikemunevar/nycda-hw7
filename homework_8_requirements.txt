@@ -26,15 +26,15 @@ Create a hotel show page that displays the name, description, location, photo, a
 
 
 Link the user on the hotel show page to the show page for the user.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Add edit and delete links to the hotel show page, but only display the links if currently signed in and the currently-signed user is either an admin or the hotel belongs to them.
-[ INCOMPLETE ]
+[ Partially COMPLETE ]
 
 
 List the hotels that belong to a user on the user’s show page, with each hotel linked to its show page.
-[ INCOMPLETE ]
+[ COMPLETE ]
 
 
 Add the Geocoder (Links to an external site.) gem to your app.
