@@ -10,6 +10,8 @@
       <th>Location</th>
       <th>Photo</th>
       <th>User</th>
+      <th>Latitude, Longitude</th>
+      
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,6 +25,9 @@
         <td><%= image_tag(hotel.photo.url(:thumb)) %> <%= hotel.photo_id %> </td>
         <!-- In order to use the @hotel.user.name shortcut, you have to define your has_many() and belongs_to() relationships in the models #MDM -->
         <td><%= hotel.user_id %>. <%= show_user_link(hotel.user_id, hotel.user.name ) %>
+</td>
+        <!-- Geocoder I suggest adding an if latitude or longitude != nil here #MDM-->
+        <td><%= hotel.latitude.round(2) %>, <%= hotel.longitude.round(2) %>
 </td>
         <td><%= link_to 'Show', hotel %></td>
         <td><%= link_to 'Edit', edit_hotel_path(hotel) %></td>

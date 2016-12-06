@@ -36,6 +36,8 @@ gem 'devise'
 # Install paperclip for attachments #MDM
 gem "paperclip", "~> 4.2"
 
+gem 'geocoder'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

@@ -24,6 +24,8 @@ class Hotel < ActiveRecord::Base
                      
     validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/  
     
-    
-      
+    #Geocoder
+    geocoded_by :location   # can also be an IP address
+    after_validation :geocode          # auto-fetch coordinates
+
 end
